@@ -12,5 +12,5 @@ import RxSwift
 protocol ApiClientProtocol {
     
     func login(username: String, password: String) -> Single<LoginResponseTest?>
-    func customerDetail(token: String, customerId: String) -> Single<dataValueResponse?>
+    func customerDetail(token: String, customerId: String) -> Single<CustomerDetailResponse?>
 }

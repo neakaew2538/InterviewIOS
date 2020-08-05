@@ -20,9 +20,9 @@ class ApiClient: ApiClientProtocol {
         return request(router: router, type: LoginResponseTest.self)
     }
     
-    func customerDetail(token: String, customerId: String) -> Single<dataValueResponse?> {
+    func customerDetail(token: String, customerId: String) -> Single<CustomerDetailResponse?> {
         let router = Router.customerDetail(token: token, customerId: customerId)
-        return request(router: router, type: dataValueResponse.self)
+        return request(router: router, type: CustomerDetailResponse.self)
     }
     
     private func request<T: Codable>(router: URLRequestConvertible, type: T.Type) -> Single<T?> {

@@ -175,22 +175,15 @@
 		EFE6F02824DABB1F00E96342 /* InterviewTestIOS */ = {
 			isa = PBXGroup;
 			children = (
+				EFE6F08024DACFBE00E96342 /* View */,
 				EFE6F05D24DABC9500E96342 /* Response */,
 				EFE6F05A24DABC6B00E96342 /* ViewModel */,
 				EFE6F05924DABC6200E96342 /* Service */,
 				EFE6F02924DABB1F00E96342 /* AppDelegate.swift */,
 				EFE6F02B24DABB1F00E96342 /* SceneDelegate.swift */,
-				EFE6F02D24DABB1F00E96342 /* ViewController.swift */,
-				EFE6F02F24DABB1F00E96342 /* Main.storyboard */,
 				EFE6F03224DABB2100E96342 /* Assets.xcassets */,
 				EFE6F03424DABB2100E96342 /* LaunchScreen.storyboard */,
 				EFE6F03724DABB2100E96342 /* Info.plist */,
-				EFE6F07424DAC23100E96342 /* DashboardVC.swift */,
-				EFE6F07624DAC2E500E96342 /* DashboardVC.xib */,
-				EFE6F07824DAC99B00E96342 /* DataCell.swift */,
-				EFE6F07A24DAC9A500E96342 /* DataCell.xib */,
-				EFE6F07C24DACB9200E96342 /* DetailVC.swift */,
-				EFE6F07E24DACB9B00E96342 /* DetailVC.xib */,
 			);
 			path = InterviewTestIOS;
 			sourceTree = "<group>";
@@ -244,6 +237,29 @@
 				EFE6F05E24DABCAB00E96342 /* Response.swift */,
 			);
 			path = Response;
+			sourceTree = "<group>";
+		};
+		EFE6F08024DACFBE00E96342 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EFE6F02D24DABB1F00E96342 /* ViewController.swift */,
+				EFE6F02F24DABB1F00E96342 /* Main.storyboard */,
+				EFE6F07424DAC23100E96342 /* DashboardVC.swift */,
+				EFE6F07624DAC2E500E96342 /* DashboardVC.xib */,
+				EFE6F07C24DACB9200E96342 /* DetailVC.swift */,
+				EFE6F07E24DACB9B00E96342 /* DetailVC.xib */,
+				EFE6F08124DACFCA00E96342 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EFE6F08124DACFCA00E96342 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EFE6F07824DAC99B00E96342 /* DataCell.swift */,
+				EFE6F07A24DAC9A500E96342 /* DataCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

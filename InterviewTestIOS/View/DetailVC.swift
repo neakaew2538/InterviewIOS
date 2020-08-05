@@ -24,6 +24,13 @@ class DetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        viewModel.customerDetailponse = {
+            if let response = $0 {
+                if response.status == 200 {
+                    self.labelSuccess.text = "Call API Success !!!!!!"
+                }
+            }
+        }
+        viewModel.customerDetail(token: self.tokenValue, customerId: self.getID)
     }
 }

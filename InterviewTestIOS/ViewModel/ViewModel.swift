@@ -12,7 +12,7 @@ import RxSwift
 class ViewModel {
     
     var loginResponse: ((_ response: LoginResponseTest?)->())?
-    var customerDetailponse: ((_ response: dataValueResponse?)->())?
+    var customerDetailponse: ((_ response: CustomerDetailResponse?)->())?
     var errorResponse: ((_ error: Error?)->())?
     
     private let apiClient: ApiClientProtocol

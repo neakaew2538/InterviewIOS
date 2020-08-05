@@ -26,8 +26,6 @@ class ViewController: UIViewController {
             if let response = $0 {
                 if response.status == 200 {
                     print("--------Success-----!!!!!!!")
-                    print("--------Success-----\(response.customers)")
-                    print("--------Success-----\(response.token ?? "")")
                     self.getToken = response.token ?? ""
                     
                     let vc = DashboardVC()
