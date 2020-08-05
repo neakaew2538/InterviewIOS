@@ -9,12 +9,41 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var userNameTF: UITextField!
+    @IBOutlet weak var passwordTF: UITextField!
+    
+    lazy var viewModel: ViewModel = {
+        return ViewModel()
+    }()
+    
+    var getToken = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        viewModel.loginResponse = {
+            if let response = $0 {
+                if response.status == 200 {
+                    print("--------Success-----!!!!!!!")
+                    print("--------Success-----\(response.customers)")
+                    print("--------Success-----\(response.token ?? "")")
+                    self.getToken = response.token ?? ""
+                    
+                    let vc = DashboardVC()
+                    vc.tokenValue = response.token ?? ""
+                    self.navigationController?.pushViewController(vc, animated: true)
+                }
+            }
+        }
+        
     }
-
-
+    
+    @IBAction func loginButtonAction(_ sender: UIButton) {
+        if userNameTF.text != "" && passwordTF.text != "" {
+            viewModel.login(username: userNameTF.text!, password: passwordTF.text!)
+        }
+    }
+    
 }
 
