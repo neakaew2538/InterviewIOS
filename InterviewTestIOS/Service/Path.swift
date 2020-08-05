@@ -13,6 +13,8 @@ extension Router {
         switch self {
         case .login:
             return "/login"
+        case .customerDetail:
+            return "/getCustomerDetail"
         }
     }
 }

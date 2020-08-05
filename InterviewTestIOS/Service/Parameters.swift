@@ -16,6 +16,11 @@ extension Router {
                 "username": username,
                 "password": password
             ]
+        case .customerDetail(token: let token, customerId: let customerId):
+            return [
+                "token": token,
+                "customerId": customerId
+            ]
         }
     }
 }

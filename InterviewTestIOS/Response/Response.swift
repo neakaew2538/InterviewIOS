@@ -23,9 +23,41 @@ struct LoginResponseTest: Codable {
 
 struct CustomersResponse: Codable {
     
-    let token: String?
+    let id: String?
+    let name: String?
 
     private enum CodingKeys: String, CodingKey {
-        case token = "token"
+        case id = "id"
+        case name = "name"
+    }
+}
+
+
+struct CustomerDetailResponse: Codable {
+    
+    let status: Int
+    let data: dataValueResponse?
+    
+
+    private enum CodingKeys: String, CodingKey {
+        case status = "status"
+        case data = "data"
+    }
+}
+
+struct dataValueResponse: Codable {
+    let customerGrade: String?
+    let id: String?
+    let isCustomerPremium: Bool
+    let name: String?
+    let sex: String?
+    
+
+    private enum CodingKeys: String, CodingKey {
+        case customerGrade = "customerGrade"
+        case id = "id"
+        case isCustomerPremium = "isCustomerPremium"
+        case name = "name"
+        case sex = "sex"
     }
 }

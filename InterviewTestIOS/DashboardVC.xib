@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DashboardVC" customModule="InterviewTestIOS" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="XOc-9X-kDo" id="wDp-mu-H2P"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Bdc-Oy-HX6"/>
             </connections>
         </placeholder>
@@ -25,12 +26,20 @@
                         <action selector="logoutButtonAction:" destination="-1" eventType="touchUpInside" id="ayr-rI-QGa"/>
                     </connections>
                 </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XOc-9X-kDo">
+                    <rect key="frame" x="20" y="64" width="374" height="718"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="v41-hi-aCh" secondAttribute="bottom" constant="30" id="2JD-Cs-8f0"/>
+                <constraint firstItem="v41-hi-aCh" firstAttribute="top" secondItem="XOc-9X-kDo" secondAttribute="bottom" constant="20" id="ZdN-I7-gdE"/>
+                <constraint firstItem="XOc-9X-kDo" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="nJD-2u-o9m"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="v41-hi-aCh" secondAttribute="trailing" constant="20" id="qkZ-Hh-DpX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="XOc-9X-kDo" secondAttribute="trailing" constant="20" id="sRk-Dn-TNS"/>
                 <constraint firstItem="v41-hi-aCh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="ufE-z4-2lz"/>
+                <constraint firstItem="XOc-9X-kDo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="wrD-2u-VDN"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="139" y="141"/>

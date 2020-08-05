@@ -12,6 +12,7 @@ import Alamofire
 public enum Router: RouterProtocol {
     
     case login(username: String, password: String)
+    case customerDetail(token: String, customerId: String)
     
     public var baseURLString: String {
         return ApiClient.baseUrl

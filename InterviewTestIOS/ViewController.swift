@@ -32,6 +32,7 @@ class ViewController: UIViewController {
                     
                     let vc = DashboardVC()
                     vc.tokenValue = response.token ?? ""
+                    vc.getLoginResponseTest = response
                     self.navigationController?.pushViewController(vc, animated: true)
                 }
             }

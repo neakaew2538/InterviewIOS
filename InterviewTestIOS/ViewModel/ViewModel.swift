@@ -12,6 +12,7 @@ import RxSwift
 class ViewModel {
     
     var loginResponse: ((_ response: LoginResponseTest?)->())?
+    var customerDetailponse: ((_ response: dataValueResponse?)->())?
     var errorResponse: ((_ error: Error?)->())?
     
     private let apiClient: ApiClientProtocol
@@ -27,4 +28,11 @@ class ViewModel {
                        onError: { self.errorResponse?($0) })
             .disposed(by: disposeBag)
     }
+    
+    func customerDetail(token: String, customerId: String) {
+        apiClient.customerDetail(token: token, customerId: customerId)
+               .subscribe(onSuccess: { self.customerDetailponse?($0) },
+                          onError: { self.errorResponse?($0) })
+               .disposed(by: disposeBag)
+       }
 }

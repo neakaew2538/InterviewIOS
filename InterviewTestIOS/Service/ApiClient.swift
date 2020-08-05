@@ -20,6 +20,11 @@ class ApiClient: ApiClientProtocol {
         return request(router: router, type: LoginResponseTest.self)
     }
     
+    func customerDetail(token: String, customerId: String) -> Single<dataValueResponse?> {
+        let router = Router.customerDetail(token: token, customerId: customerId)
+        return request(router: router, type: dataValueResponse.self)
+    }
+    
     private func request<T: Codable>(router: URLRequestConvertible, type: T.Type) -> Single<T?> {
         return requestData(router).asSingle().map { (response, data) in
             guard let result = try? JSONDecoder().decode(type, from: data) else {

@@ -32,6 +32,10 @@
 		EFE6F07324DABE7600E96342 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE6F07224DABE7600E96342 /* Path.swift */; };
 		EFE6F07524DAC23100E96342 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE6F07424DAC23100E96342 /* DashboardVC.swift */; };
 		EFE6F07724DAC2E600E96342 /* DashboardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFE6F07624DAC2E500E96342 /* DashboardVC.xib */; };
+		EFE6F07924DAC99B00E96342 /* DataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE6F07824DAC99B00E96342 /* DataCell.swift */; };
+		EFE6F07B24DAC9A500E96342 /* DataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFE6F07A24DAC9A500E96342 /* DataCell.xib */; };
+		EFE6F07D24DACB9200E96342 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE6F07C24DACB9200E96342 /* DetailVC.swift */; };
+		EFE6F07F24DACB9B00E96342 /* DetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFE6F07E24DACB9B00E96342 /* DetailVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +92,10 @@
 		EFE6F07224DABE7600E96342 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		EFE6F07424DAC23100E96342 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
 		EFE6F07624DAC2E500E96342 /* DashboardVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardVC.xib; sourceTree = "<group>"; };
+		EFE6F07824DAC99B00E96342 /* DataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCell.swift; sourceTree = "<group>"; };
+		EFE6F07A24DAC9A500E96342 /* DataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataCell.xib; sourceTree = "<group>"; };
+		EFE6F07C24DACB9200E96342 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		EFE6F07E24DACB9B00E96342 /* DetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailVC.xib; sourceTree = "<group>"; };
 		FB454FA6F1A7657567C1E514 /* Pods_InterviewTestIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterviewTestIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -179,6 +187,10 @@
 				EFE6F03724DABB2100E96342 /* Info.plist */,
 				EFE6F07424DAC23100E96342 /* DashboardVC.swift */,
 				EFE6F07624DAC2E500E96342 /* DashboardVC.xib */,
+				EFE6F07824DAC99B00E96342 /* DataCell.swift */,
+				EFE6F07A24DAC9A500E96342 /* DataCell.xib */,
+				EFE6F07C24DACB9200E96342 /* DetailVC.swift */,
+				EFE6F07E24DACB9B00E96342 /* DetailVC.xib */,
 			);
 			path = InterviewTestIOS;
 			sourceTree = "<group>";
@@ -344,8 +356,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFE6F07724DAC2E600E96342 /* DashboardVC.xib in Resources */,
+				EFE6F07F24DACB9B00E96342 /* DetailVC.xib in Resources */,
 				EFE6F03624DABB2100E96342 /* LaunchScreen.storyboard in Resources */,
 				EFE6F03324DABB2100E96342 /* Assets.xcassets in Resources */,
+				EFE6F07B24DAC9A500E96342 /* DataCell.xib in Resources */,
 				EFE6F03124DABB1F00E96342 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,6 +493,7 @@
 				EFE6F06124DABCCB00E96342 /* RouterProtocol.swift in Sources */,
 				EFE6F07124DABE5600E96342 /* AsURLRequest.swift in Sources */,
 				EFE6F02E24DABB1F00E96342 /* ViewController.swift in Sources */,
+				EFE6F07D24DACB9200E96342 /* DetailVC.swift in Sources */,
 				EFE6F06724DABD4D00E96342 /* ApiClient.swift in Sources */,
 				EFE6F02A24DABB1F00E96342 /* AppDelegate.swift in Sources */,
 				EFE6F06324DABCE500E96342 /* Router.swift in Sources */,
@@ -488,6 +503,7 @@
 				EFE6F05F24DABCAB00E96342 /* Response.swift in Sources */,
 				EFE6F06B24DABE1C00E96342 /* Headers.swift in Sources */,
 				EFE6F07524DAC23100E96342 /* DashboardVC.swift in Sources */,
+				EFE6F07924DAC99B00E96342 /* DataCell.swift in Sources */,
 				EFE6F07324DABE7600E96342 /* Path.swift in Sources */,
 				EFE6F06D24DABE3200E96342 /* Parameters.swift in Sources */,
 			);
