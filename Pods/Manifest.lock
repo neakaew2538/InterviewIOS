@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.2.0)
+  - BEMCheckBox (1.4.1)
   - RxAlamofire (5.2.0):
     - RxAlamofire/Core (= 5.2.0)
   - RxAlamofire/Core (5.2.0):
@@ -9,19 +10,22 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - BEMCheckBox
   - RxAlamofire
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - BEMCheckBox
     - RxAlamofire
     - RxSwift
 
 SPEC CHECKSUMS:
   Alamofire: c1ca147559e730bfb2182c8c7aafbdd90a867987
+  BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
   RxAlamofire: 878eb06baefd76df6062889be11592434e6c4a95
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
 
-PODFILE CHECKSUM: a5c19a6a8a70e83bd2d630227e215e61b6aa0bf1
+PODFILE CHECKSUM: ca204ec41e8395f1b89fc95c87e49d07c0001b07
 
 COCOAPODS: 1.8.4

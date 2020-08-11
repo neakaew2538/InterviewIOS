@@ -18,31 +18,40 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v41-hi-aCh">
-                    <rect key="frame" x="20" y="802" width="374" height="30"/>
-                    <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <state key="normal" title="LOGOUT"/>
-                    <connections>
-                        <action selector="logoutButtonAction:" destination="-1" eventType="touchUpInside" id="ayr-rI-QGa"/>
-                    </connections>
-                </button>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XOc-9X-kDo">
-                    <rect key="frame" x="20" y="64" width="374" height="718"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XOc-9X-kDo">
+                    <rect key="frame" x="20" y="96" width="374" height="766"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </tableView>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J5o-V5-lBJ">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <items>
+                        <navigationItem title="Dashboard" id="4n9-kb-kfl">
+                            <barButtonItem key="rightBarButtonItem" image="img_136049" id="jCQ-zx-88a">
+                                <connections>
+                                    <action selector="logoutButtonAction:" destination="-1" id="4Rd-99-FbG"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="v41-hi-aCh" secondAttribute="bottom" constant="30" id="2JD-Cs-8f0"/>
-                <constraint firstItem="v41-hi-aCh" firstAttribute="top" secondItem="XOc-9X-kDo" secondAttribute="bottom" constant="20" id="ZdN-I7-gdE"/>
-                <constraint firstItem="XOc-9X-kDo" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="nJD-2u-o9m"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="v41-hi-aCh" secondAttribute="trailing" constant="20" id="qkZ-Hh-DpX"/>
+                <constraint firstItem="J5o-V5-lBJ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="57A-ab-ZFX"/>
+                <constraint firstItem="J5o-V5-lBJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Kll-bD-5KH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="XOc-9X-kDo" secondAttribute="bottom" id="Mgk-3R-l8H"/>
+                <constraint firstAttribute="trailing" secondItem="J5o-V5-lBJ" secondAttribute="trailing" id="eoF-V7-Aqo"/>
+                <constraint firstItem="XOc-9X-kDo" firstAttribute="top" secondItem="J5o-V5-lBJ" secondAttribute="bottom" constant="8" id="h0T-PM-fR7"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="XOc-9X-kDo" secondAttribute="trailing" constant="20" id="sRk-Dn-TNS"/>
-                <constraint firstItem="v41-hi-aCh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="ufE-z4-2lz"/>
                 <constraint firstItem="XOc-9X-kDo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="wrD-2u-VDN"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <point key="canvasLocation" x="139" y="141"/>
+            <point key="canvasLocation" x="137.68115942028987" y="140.625"/>
         </view>
     </objects>
+    <resources>
+        <image name="img_136049" width="32" height="32"/>
+    </resources>
 </document>

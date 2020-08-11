@@ -24,16 +24,35 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q9m-1y-KEX">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <items>
+                        <navigationItem title="Detail" id="deQ-sV-Xcw">
+                            <barButtonItem key="leftBarButtonItem" title="Item" image="back-arrow-icon" id="NUf-ME-4aP">
+                                <connections>
+                                    <action selector="backButtonAction:" destination="-1" id="pmn-4q-Nrc"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstItem="JPV-9w-eQB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ItY-bL-6su"/>
                 <constraint firstItem="JPV-9w-eQB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="ReE-gF-f8b"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="JPV-9w-eQB" secondAttribute="trailing" constant="20" id="aLd-vk-k1p"/>
+                <constraint firstItem="Q9m-1y-KEX" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="h0J-Be-I5i"/>
                 <constraint firstItem="JPV-9w-eQB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jCG-DP-96J"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Q9m-1y-KEX" secondAttribute="trailing" id="kOi-4n-vmi"/>
+                <constraint firstItem="Q9m-1y-KEX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="yrh-46-aj0"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="139" y="141"/>
         </view>
     </objects>
+    <resources>
+        <image name="back-arrow-icon" width="32" height="32"/>
+    </resources>
 </document>

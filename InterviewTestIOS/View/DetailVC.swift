@@ -33,4 +33,8 @@ class DetailVC: UIViewController {
         }
         viewModel.customerDetail(token: self.tokenValue, customerId: self.getID)
     }
+    
+    @IBAction func backButtonAction(_ sender: UIBarButtonItem) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }

@@ -6,6 +6,7 @@ target 'InterviewTestIOS' do
   use_frameworks!
   pod 'Alamofire'
   pod 'RxAlamofire'
+  pod 'BEMCheckBox'
 
   # Pods for InterviewTestIOS
 
