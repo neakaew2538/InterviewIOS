@@ -11,11 +11,12 @@ import UIKit
 
 class DetailVC: UIViewController {
     
-    @IBOutlet weak var labelSuccess: UILabel!
     @IBOutlet weak var gradeLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var sexLabel: UILabel!
     @IBOutlet weak var bgView: UIView!
+    @IBOutlet weak var loadingView: UIView!
+    @IBOutlet weak var activityView: UIActivityIndicatorView!
     
     var tokenValue = ""
     var getID = ""
@@ -28,14 +29,15 @@ class DetailVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpLoading(type: false)
         setUpView()
         
         viewModel.customerDetailponse = {
             if let response = $0 {
                 if response.status == 200 {
                     self.getDataValueResponse = response.data
-                    self.labelSuccess.text = "Call API Success !!!!!!"
                     self.setUpValue()
+                    self.setUpLoading(type: true)
                 }
             }
         }
@@ -52,6 +54,15 @@ class DetailVC: UIViewController {
         gradeLabel.text = "Grade : \(self.getDataValueResponse?.customerGrade ?? "-")"
         nameLabel.text = "Name : \(self.getDataValueResponse?.name ?? "-")"
         sexLabel.text = "Sex : \(self.getDataValueResponse?.sex ?? "-")"
+    }
+    
+    func setUpLoading(type: Bool) {
+        loadingView.isHidden = type
+        if type == true {
+            activityView.stopAnimating()
+        } else {
+            activityView.startAnimating()
+        }
     }
     
     @IBAction func backButtonAction(_ sender: UIBarButtonItem) {
