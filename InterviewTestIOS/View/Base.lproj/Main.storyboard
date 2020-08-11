@@ -61,19 +61,20 @@
                                                 </constraints>
                                             </imageView>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mIP-QJ-UiV">
-                                                <rect key="frame" x="30" y="13" width="316" height="18.5"/>
+                                                <rect key="frame" x="30" y="0.0" width="316" height="44"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="mIP-QJ-UiV" firstAttribute="centerY" secondItem="u98-bg-xMC" secondAttribute="centerY" id="PFX-rz-jfO"/>
+                                            <constraint firstAttribute="bottom" secondItem="mIP-QJ-UiV" secondAttribute="bottom" id="KqG-e4-dlq"/>
                                             <constraint firstAttribute="height" constant="44" id="XXv-gl-cnJ"/>
                                             <constraint firstItem="9OR-8X-MKi" firstAttribute="leading" secondItem="u98-bg-xMC" secondAttribute="leading" constant="8" id="Xmv-a5-lTN"/>
                                             <constraint firstItem="9OR-8X-MKi" firstAttribute="centerY" secondItem="u98-bg-xMC" secondAttribute="centerY" id="Xqh-q3-kSd"/>
                                             <constraint firstAttribute="trailing" secondItem="mIP-QJ-UiV" secondAttribute="trailing" constant="8" id="egP-Dd-vIB"/>
                                             <constraint firstItem="mIP-QJ-UiV" firstAttribute="leading" secondItem="9OR-8X-MKi" secondAttribute="trailing" constant="6" id="jF4-P8-6Su"/>
+                                            <constraint firstItem="mIP-QJ-UiV" firstAttribute="top" secondItem="u98-bg-xMC" secondAttribute="top" id="jy7-uY-jak"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RMI-Tu-LZ4">
@@ -87,16 +88,17 @@
                                                 </constraints>
                                             </imageView>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MIK-pH-4QQ">
-                                                <rect key="frame" x="30" y="13" width="316" height="18.5"/>
+                                                <rect key="frame" x="30" y="0.0" width="316" height="44"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="54i-pi-Icw" firstAttribute="centerY" secondItem="RMI-Tu-LZ4" secondAttribute="centerY" id="3Fn-F4-rMt"/>
+                                            <constraint firstItem="MIK-pH-4QQ" firstAttribute="top" secondItem="RMI-Tu-LZ4" secondAttribute="top" id="Afm-Xn-A69"/>
                                             <constraint firstItem="54i-pi-Icw" firstAttribute="leading" secondItem="RMI-Tu-LZ4" secondAttribute="leading" constant="8" id="BJp-bl-pE9"/>
-                                            <constraint firstItem="MIK-pH-4QQ" firstAttribute="centerY" secondItem="RMI-Tu-LZ4" secondAttribute="centerY" id="V8e-MC-0FC"/>
+                                            <constraint firstAttribute="bottom" secondItem="MIK-pH-4QQ" secondAttribute="bottom" id="NFq-ef-KvP"/>
                                             <constraint firstAttribute="height" constant="44" id="mre-6J-Pm7"/>
                                             <constraint firstItem="MIK-pH-4QQ" firstAttribute="leading" secondItem="54i-pi-Icw" secondAttribute="trailing" constant="6" id="xbQ-fd-MDC"/>
                                             <constraint firstAttribute="trailing" secondItem="MIK-pH-4QQ" secondAttribute="trailing" constant="8" id="yN3-jJ-Te8"/>

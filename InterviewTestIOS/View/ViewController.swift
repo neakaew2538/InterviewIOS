@@ -43,6 +43,9 @@ class ViewController: UIViewController {
             }
         }
         
+        userNameTF.delegate = self
+        passwordTF.delegate = self
+        
     }
     
     func setUpViewAndValue() {
@@ -84,6 +87,13 @@ class ViewController: UIViewController {
         passwordTF.text = ""
     }
     
+}
+
+extension ViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {   
+        textField.resignFirstResponder()
+        return true
+    }
 }
 
 extension UIViewController {
